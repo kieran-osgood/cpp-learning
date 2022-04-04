@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.cpp Car.cpp Car.h FlyingCar.cpp FlyingCar.h)
+add_executable(untitled main.cpp sources/Car/Car.cpp)
