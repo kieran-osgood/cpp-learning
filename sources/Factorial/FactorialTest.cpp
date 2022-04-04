@@ -1,23 +1,14 @@
 //
 // Created by Kieran Osgood on 31/03/2022.
 //
-#include "FactorialTest.h"
-
-/**
- * @param n
- * @return int n
- */
-int Factorial(int n) {
-    return n;
-}
 
 // Tests factorial of 0.
-TEST(FactorialTest, example_test) {
+TEST(Factorial, example_test) {
     EXPECT_EQ(Factorial(0),1);
 }
 
 // Tests factorial of positive numbers.
-TEST(FactorialTest, HandlesPositiveInput) {
+TEST(Factorial, HandlesPositiveInput) {
     EXPECT_EQ(Factorial(1),1);
     EXPECT_EQ(Factorial(2),2);
     EXPECT_EQ(Factorial(3),6);
