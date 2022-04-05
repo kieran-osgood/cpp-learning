@@ -6,6 +6,7 @@
 #define UNTITLED_FACTORIAL_H
 
 class Factorial {
+public:
     int calculate(int n);
 };
 

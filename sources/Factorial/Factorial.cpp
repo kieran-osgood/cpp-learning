@@ -5,5 +5,6 @@
 #include "Factorial.h"
 
 int Factorial::calculate(int n) {
-    return n;
+    if (n == 0) return 1;
+    return n * Factorial::calculate(n - 1);
 };

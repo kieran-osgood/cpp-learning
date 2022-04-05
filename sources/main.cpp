@@ -1,32 +1,11 @@
 #include <iostream>
 #include "Car/Car.h"
-//#include <term.h>
-
-//void ClearScreen() {
-//    if (!cur_term) {
-//        int result;
-//        setupterm(NULL, STDOUT_FILENO, &result);
-//        if (result <= 0) return;
-//    }
-//
-//    putp(tigetstr("clear"));
-//}
+#include "Factorial/Factorial.h"
 
 int main() {
-    std::cout << "Hello World";
+    std::cout << "Hello World" << std::endl;
     Car myCar("Super fast");
     myCar.move();
-
-    system("read -p 'Press Enter to continue...' var");
+    std::cout << std::endl << "factorial of 1=" << Factorial().calculate(1);
+//    system("read -p 'Press Enter to continue...' var");
 }
-
-//int main() {
-//    FlyingCar flyingCar("Volvo");
-//    std::cout << flyingCar.Name << std::endl;
-//
-//    FlyingCar* fcar = &flyingCar;
-//    fcar->move();
-//
-//    Car* car = &flyingCar;
-//    car->move();
-//}
